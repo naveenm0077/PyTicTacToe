@@ -10,7 +10,7 @@ root.resizable(width = False, height = False)
 root.config(bg = "Dimgray")
 #root.attributes("-alpha",-1)
 
-img  =  ImageTk.PhotoImage(Image.open("C:/Users/navee/Documents/Code/Python/Programs/img1.jpg"))
+img  =  ImageTk.PhotoImage(Image.open("C:/Users/navee/Documents/Code/Python/Programs/xoxo.jpg"))
 l = Label(image = img,width = 549,height = 564).place(x = -3, y = 86)
 
 op =  0

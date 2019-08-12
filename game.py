@@ -106,20 +106,20 @@ def aa(q):
     global op, flag
     if q == 1:
        if op == 0:
-           a.config(text = "X",bg = "dodgerblue",fg= "red")
+           a.config(text = "X",bg = "dodgerblue",fg= "white")
            op = op+1
        else:
-           a.config(text = "O",bg = "dodgerblue",fg= "red")
+           a.config(text = "O",bg = "dodgerblue",fg= "white")
            op = op-1
        flag= flag+1
        a.config(state="disable")
        checkwin()
     elif q == 2:
        if op == 0:
-           b.config(text="X",bg = "dodgerblue",fg= "yellow")
+           b.config(text="X",bg = "dodgerblue",fg= "white")
            op=op+1
        else:
-           b.config(text="O",bg = "dodgerblue",fg= "yellow")
+           b.config(text="O",bg = "dodgerblue",fg= "white")
            op=op-1
        flag= flag+1
        b.config(state="disable")

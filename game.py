@@ -52,10 +52,15 @@ def gameover(winflag):
     playerX = playerX_name.get()
     playerO = playerO_name.get()
 
+    if playerX == "":
+        playerX = "Player X"
+    if playerO == "":
+        playerO = "Player O"
+
     if  winflag == 1:
-        wLabel1 = Label(win, text = "%s Wins!"%playerX,font = 'Times 20 bold').place(x = 60, y = 80)
+        wLabel1 = Label(win, text = "%s Wins!"%playerX,font = 'Times 20 bold').place(x = 50, y = 80)
     elif winflag == 2:
-        wLabel2 = Label(win, text = "%s Wins!"%playerO,font = 'Times 20 bold').place(x = 60, y = 80)
+        wLabel2 = Label(win, text = "%s Wins!"%playerO,font = 'Times 20 bold').place(x = 50, y = 80)
     elif winflag == 3:
         wLabel3 = Label(win, text = "It is a tie ¯\_(ツ)_/¯",font = 'Times 20 bold').place(x = 15, y = 80)   
     Button(win, text = "RESTART",font = 'Times 10 bold', command = restart_program,width = 12,height = 3).place(x = 80, y = 150)    
@@ -106,20 +111,20 @@ def aa(q):
     global op, flag
     if q == 1:
        if op == 0:
-           a.config(text = "X",bg = "dodgerblue",fg= "white")
+           a.config(text = "X",bg = "dodgerblue",fg= "red")
            op = op+1
        else:
-           a.config(text = "O",bg = "dodgerblue",fg= "white")
+           a.config(text = "O",bg = "dodgerblue",fg= "red")
            op = op-1
        flag= flag+1
        a.config(state="disable")
        checkwin()
     elif q == 2:
        if op == 0:
-           b.config(text="X",bg = "dodgerblue",fg= "white")
+           b.config(text="X",bg = "dodgerblue",fg= "yellow")
            op=op+1
        else:
-           b.config(text="O",bg = "dodgerblue",fg= "white")
+           b.config(text="O",bg = "dodgerblue",fg= "yellow")
            op=op-1
        flag= flag+1
        b.config(state="disable")

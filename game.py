@@ -10,7 +10,7 @@ root.resizable(width = False, height = False)
 root.config(bg = "Dimgray")
 #root.attributes("-alpha",-1)
 
-img  =  ImageTk.PhotoImage(Image.open("C:/Users/navee/Documents/Code/Python/Programs/xoxo.jpg"))
+img  =  ImageTk.PhotoImage(Image.open("C:/Users/navee/Documents/Code/Python/xoxo.jpg"))
 l = Label(image = img,width = 549,height = 564).place(x = -3, y = 86)
 
 op =  0
@@ -45,12 +45,14 @@ def gameover(winflag):
     win = Toplevel()
     win.title("Game Over")
     win.geometry("260x260+614+339")
-    win.resizable(width = False, height = False)
+    #win.resizable(width = False, height = False)
     #win.attributes("-toolwindow",1)
     global playerX, playerO, playerX_name, playerO_name
 
     playerX = playerX_name.get()
+    playerX = playerX.title() 
     playerO = playerO_name.get()
+    playerO = playerO.title()
 
     if playerX == "":
         playerX = "Player X"

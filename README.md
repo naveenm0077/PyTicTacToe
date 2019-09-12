@@ -1,4 +1,4 @@
-# xoxo
+# Tic-Tac-Toe
 A simple Tic-Tac-Toe game in Python using Tkinter.
 
 You'll need pillow module to run this. Pillow is a free library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats.

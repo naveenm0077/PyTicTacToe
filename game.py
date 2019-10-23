@@ -105,7 +105,7 @@ def checkwin():
          disable()
          gameover(2)
          
-    elif(flag == 8):
+    elif(flag == 9):
         disable()
         gameover(3)
 
